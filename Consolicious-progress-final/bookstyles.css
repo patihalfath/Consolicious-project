@@ -1,0 +1,341 @@
+    /* Global Styles */
+    body {
+        font-family: 'Poppins', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #0d1117, #1e1e2d);
+        color: #c7c7c7;
+    }
+
+    /* Header */
+    header {
+        background-color: #222436;
+        color: #fff;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    header .logo h1 {
+        margin: 0;
+        font-size: 28px;
+        color: #ffffff;
+        font-weight: bold;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    header nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    header nav ul li {
+        margin-left: 25px;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: color 0.3s, transform 0.3s;
+    }
+
+    header nav ul li a:hover {
+        color: #27b5e4;
+        transform: scale(1.1);
+    }
+
+    /* Main Content */
+    main {
+        padding: 30px;
+        max-width: 900px;
+        margin: 40px auto;
+        background: #1e1e2d;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        color: #ffffff;
+        line-height: 1.8;
+    }
+
+    main h2 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+        color: #ffffff;
+        font-weight: bold;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    main img {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    main p {
+        margin: 15px 0;
+        font-size: 1rem;
+        color: #c7c7c7;
+    }
+
+    /* Booking Form */
+    .booking-form {
+        margin-top: 30px;
+        background: #222436;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        max-width: 100%; 
+        box-sizing: border-box; /* Menjaga padding tetap di dalam elemen */
+        overflow: hidden; /* Mencegah konten meluap */
+    }
+
+    .booking-form h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #27b5e4;
+        font-weight: bold;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        text-align: center; /* Menyejajarkan teks */
+    }
+
+    .booking-form label {
+        display: block;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        color: #c7c7c7;
+    }
+
+    .booking-form input, 
+    .booking-form button {
+        width: 100%; /* Agar menyesuaikan container */
+        padding: 12px;
+        font-size: 1rem;
+        margin-bottom: 15px;
+        border: 1px solid #4caf50;
+        border-radius: 8px;
+        box-sizing: border-box; /* Memastikan padding tetap di dalam elemen */
+        transition: all 0.3s ease;
+    }
+
+    .booking-form input:focus {
+        outline: none;
+        border-color: #27b5e4;
+        box-shadow: 0 0 8px rgba(39, 181, 228, 0.8);
+    }
+
+    .booking-form button {
+        background: linear-gradient(90deg, #27b5e4, #1790c3);
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: none;
+    }
+
+    .booking-form button:hover {
+        background: linear-gradient(90deg, #1790c3, #27b5e4);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #222436;
+        color: #c7c7c7;
+        font-size: 0.9rem;
+        border-radius: 12px;
+        margin-top: 40px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    footer a {
+        color: #27b5e4;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    footer a:hover {
+        color: #1790c3;
+    }
+
+    /* Booking Confirmation */
+    .booking-confirmation {
+        max-width: 800px;
+        margin: 40px auto;
+        background-color: #2a2b3b;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        color: #ffffff;
+    }
+
+    .booking-confirmation h2 {
+        font-size: 2rem;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .booking-confirmation p {
+        font-size: 1.2rem;
+        color: #e4e4e4;
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+
+    .booking-confirmation p span {
+        font-size: 1.1rem;
+        color: #e4e4e4;
+    }
+
+    .booking-confirmation .total-price {
+        font-size: 1.4rem;
+        color: #ffae00;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: space-between; /* Sebarkan tombol ke sisi kiri dan kanan */
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .back-button {
+        background-color: #f44336; /* Warna merah untuk tombol Kembali */
+        text-decoration: none;
+    }
+
+    .pay-button {
+        background-color: #4CAF50; /* Warna hijau untuk tombol Bayar */
+        text-decoration: none;
+    }
+
+    .back-button:hover {
+        background-color: #d32f2f;
+        transform: scale(1.05); /* Efek zoom saat hover */
+    }
+
+    .pay-button:hover {
+        background-color: #388e3c;
+        transform: scale(1.05); /* Efek zoom saat hover */
+    }
+
+    /* Kontainer utama untuk QR code */
+    #qr-container {
+        flex-direction: column; /* Tata letak vertikal */
+        align-items: center; /* Pusatkan elemen secara horizontal */
+        justify-content: center; /* Pusatkan elemen secara vertikal */
+        margin: 0 auto; /* Agar tetap di tengah halaman */
+        text-align: center; /* Rata tengah untuk teks */
+        padding: 20px; /* Spasi di dalam kontainer */
+        border-radius: 8px; /* Opsional: sudut membulat */
+        max-width: 400px; /* Ukuran maksimal kontainer */
+    }
+
+    /* Gambar QR Code */
+    .qr-image {
+        max-width: 200px; /* Ukuran maksimal gambar QR */
+        height: auto; /* Menjaga proporsi gambar */
+        margin-bottom: 20px; /* Jarak antara gambar QR dan tombol */
+    }
+
+    /* Tombol konfirmasi pembayaran */
+    .confirm-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .confirm-button:hover {
+        background-color: #388e3c;
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+}
+
+#upload-form-container {
+    display: none;
+    margin-top: 20px;
+    background-color: #2a2b3b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#upload-form-container h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input[type="file"] {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button.upload-button {
+    background-color: rgb(34, 127, 215);
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+button.upload-button:hover {
+    background-color: #194da2;
+}

@@ -1,0 +1,220 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background-color: #1e1e2d;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #1790c3;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 200px;
+    font-size: 14px;
+}
+
+.search-form button {
+    background-color: #1e1e2d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.games {
+    text-align: center;
+    margin: 50px 20px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px auto;
+    justify-items: center;
+}
+
+.game-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.game-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #1e1e2d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Payment Form Modal *//* Payment Form Modal */
+.payment-form-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.payment-form-container {
+    background-color: white;
+    margin: 8% auto; /* Diperbesar untuk memberikan lebih banyak ruang di atas dan bawah */
+    padding: 30px; /* Padding diperbesar agar konten lebih lega */
+    border-radius: 12px; /* Border-radius ditingkatkan untuk estetika */
+    width: 500px; /* Lebar container diperbesar */
+    max-width: 90%; /* Menjaga fleksibilitas untuk perangkat kecil */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Shadow lebih besar untuk efek modern */
+}
+
+
+.payment-form-container {
+    background-color: white;
+    margin: 5% auto; /* Memberi ruang atas dan bawah */
+    padding: 30px; /* Menambahkan ruang dalam untuk kenyamanan */
+    border-radius: 12px;
+    width: 600px; /* Lebar diperbesar menjadi 600px */
+    max-width: 95%; /* Menyesuaikan untuk layar kecil */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Memberikan efek shadow */
+}
+
+.payment-form-container input,
+.payment-form-container textarea {
+    width: 100%; /* Mengisi seluruh lebar container */
+    padding: 12px; /* Padding input diperbesar */
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.payment-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #1e1e2d;
+}
+
+.payment-form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.payment-form-container input,
+
+.payment-form-container textarea {
+    resize: vertical; /* Memungkinkan pengguna mengubah ukuran tinggi textarea */
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px; /* Disesuaikan agar tidak terlalu mepet */
+    right: 20px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+button {
+    background-color: #1e1e2d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px; /* Ukuran font diperbesar */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3b82f6; /* Efek hover lebih menarik */
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #1e1e2d;
+    outline: none;
+    box-shadow: 0 0 5px rgba(30, 30, 45, 0.5);
+}
+
+footer {
+    background-color: #1e1e2d;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}

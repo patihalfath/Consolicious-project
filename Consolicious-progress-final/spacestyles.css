@@ -1,0 +1,406 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background-color: #1e1e2d;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1790c3;
+}
+
+/* Search Form Styles */
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 220px;
+    font-size: 14px;
+}
+
+.search-form button {
+    background-color: #1e1e2d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #1790c3;
+}
+
+/* Game and Gaming Spaces Section Styles */
+.games, .gaming-spaces {
+    text-align: center;
+    margin: 50px 20px;
+}
+
+.no-games {
+    text-align: center;
+    color: #555;
+    font-size: 1.2rem;
+    margin: 50px auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-grid, .space-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px auto;
+    justify-items: center;
+}
+
+.game-item, .space-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    max-width: 250px;
+    width: 100%;
+}
+
+.game-item:hover, .space-item:hover {
+    transform: translateY(-5px);
+}
+
+.game-item img, .space-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.game-item h3, .space-item h3 {
+    margin: 15px 0;
+    color: #333;
+}
+
+.game-item p, .space-item p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Button Styles */
+button {
+    background-color: #1e1e2d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1790c3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1e1e2d;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Detail Game Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom right, #1e1e2d, #0d1117);
+    color: #ffffff;
+    padding: 20px;
+}
+
+.game-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.game-detail-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    width: 100%;
+    background: linear-gradient(to top, #252734, #1b1b28);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+    margin: 30px;
+}
+
+.image-container {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    border-bottom: 4px solid #1790c3;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.game-info {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background: #222436;
+    border-radius: 0 0 16px 16px;
+    color: #c7c7c7;
+}
+
+.game-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.game-price {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: #4caf50;
+}
+
+.game-availability {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #ffeb3b;
+}
+
+.game-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.rent-button {
+    padding: 12px 30px;
+    background: linear-gradient(90deg, #1790c3, #27b5e4);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.rent-button:hover {
+    background: linear-gradient(90deg, #27b5e4, #1790c3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
+}
+
+/* Recommendation Section Styles */
+.game-recommendation {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to top, #0d1117, #1b1b28);
+    border-radius: 16px;
+    margin: 40px auto;
+    max-width: 1100px;
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.game-recommendation h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.recommendation-item {
+    background: #222436;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.recommendation-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.recommendation-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.recommendation-item img:hover {
+    transform: scale(1.08);
+}
+
+.recommendation-item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.recommendation-item p {
+    font-size: 0.9rem;
+    color: #999999;
+    margin-bottom: 15px;
+}
+
+.view-button {
+    padding: 10px 20px;
+    background: #1790c3;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.view-button:hover {
+    background: #27b5e4;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.booking-form {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.booking-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #1e1e2d;
+}
+
+.booking-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.booking-form input,
+.booking-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.booking-form input:focus {
+    border-color: #1a1a2e;
+    outline: none;
+}
+
+.booking-form button {
+    background-color: #1a1a2e;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.booking-form button:hover {
+    background-color: #333;
+}
+
+.space-detail img {
+    display: block; /* Memastikan gambar sebagai elemen blok */
+    margin: 0 auto; /* Gambar di tengah secara horizontal */
+    width: 800px; /* Agar tidak melebihi lebar kontainer */
+    height: 300px; /* Menjaga proporsi gambar */
+    border-radius: 8px; /* Sudut melengkung pada gambar */
+    margin-bottom: 20px; /* Jarak bawah gambar */
+    object-fit: cover;
+}
+
+.space-detail h2, p {
+    text-align: center;
+}

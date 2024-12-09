@@ -1,0 +1,500 @@
+/* Styles untuk seluruh halaman */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #1e1e2d;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    position: sticky; 
+    top: 0;
+    left: 0; 
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #1790c3;
+}
+
+main {
+    text-align: center;
+    flex: 1;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('asset/game2.png');
+    background-size: cover;
+    position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding: 100px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease-in-out;
+    height: 65vh;
+    -webkit-animation: fadeIn 1s ease-in-out;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; /* Pastikan slide memenuhi hero */
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff; /* Tombol navigasi berwarna putih */
+}
+
+.swiper-pagination-bullet {
+    background: #fff; /* Pagination berwarna putih */
+}
+
+.swiper-pagination-bullet-active {
+    background: #007BFF; /* Pagination aktif berwarna biru */
+}
+
+.swiper h2 {
+    font-size: 3rem; /* Ukuran khusus untuk h2 di index */
+    color: #ffcc00; /* Warna teks */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 120px;
+}
+
+.swiper p {
+    font-size: 1.5rem; /* Ukuran khusus untuk p di index */
+    color: #ffffff;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.cta-btn {
+    background-color: #1790c3;
+    color: #ffffff;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e1d821;
+}
+
+.rent-consoles, .book-space {
+    margin: 40px 0;
+}
+
+.console-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.console-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.console-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.console-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.console-item button {
+    background-color: #1e1e2d;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.console-item button:hover {
+    background-color: #0056b3;
+}
+
+.book-space {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.689), rgba(0, 0, 0, 0.755)), url('asset/rent.webp');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #ffffff;
+    padding: 150px 20px 100px;
+    margin-bottom: 40px;
+    text-align: center; 
+    height: 70vh;
+    
+}
+
+.book-space h2 {
+    font-size: 2.5rem; /* Ukuran font besar untuk judul */
+    margin-bottom: 20px; /* Jarak bawah */
+}
+
+.book-space p {
+    font-size: 1.2rem; /* Ukuran teks deskripsi */
+    margin-bottom: 20px; /* Jarak bawah */
+}
+
+.cta-btn {
+    background-color: #1790c3;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.book-space .cta-btn:hover {
+    background-color: #e1d821;
+}
+
+
+footer {
+    background-color: #1e1e2d;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Animasi untuk konten hero */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Login Section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('asset/regisback.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.login-section p {
+    margin-top: 10px;
+}
+
+.login-container {
+    background: #ffffff;
+    color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #1e1e2d;
+}
+
+.login-container .error-message {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.login-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-form .login-btn {
+    background: #1790c3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form .login-btn:hover {
+    background-color: #0056b3;
+}
+
+.login-container a {
+    color: #1790c3;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+    
+}
+
+body-register {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(asset/regisback.png);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-section {
+    background: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.register-section h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+}
+
+.register-form input,
+.register-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.register-form textarea {
+    resize: none;
+    height: 80px;
+}
+
+.register-btn {
+    background: #2776ee;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+    background: #10489d;
+}
+
+.register-section p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.register-section p a {
+    color: #2776ee;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-section p a:hover {
+    text-decoration: underline;
+}
+
+/* Pesan error dan sukses */
+.register-section p[style="color: red;"] {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.register-section p[style="color: blue;"] {
+    color: blue;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .register-section {
+        padding: 20px;
+        max-width: 90%;
+    }
+}
+
+/* Container untuk carousel */
+.rekomendasi-dash {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    list-style: none;
+    scrollbar-width: thin;
+    scrollbar-color: #007BFF #f1f1f1;
+}
+
+/* Tampilan scrollbar */
+.rekomendasi-dash::-webkit-scrollbar {
+    height: 8px;
+}
+
+.rekomendasi-dash::-webkit-scrollbar-thumb {
+    background: #007BFF;
+    border-radius: 10px;
+}
+
+.rekomendasi-dash::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Gaya untuk setiap item */
+.rekomendasi-item {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(103, 182, 255, 0.352);
+    flex: 0 0 auto;
+    width: 300px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+/* Efek hover untuk item */
+.rekomendasi-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(48, 176, 255, 0.878);
+}
+
+/* Gaya untuk gambar */
+.rekomendasi-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Gaya untuk teks */
+.rekomendasi-item p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding: 0 10px;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

@@ -1,0 +1,200 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+
+header {
+    background-color: #1e1e2d;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #1790c3;
+}
+
+/* Main Content Styling */
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.profile-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.profile-card h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-card p {
+    font-size: 25px;
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.profile-card .profile-info {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+
+.profile-actions {
+    margin-top: 20px;
+}
+
+.profile-actions .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.profile-actions .btn:hover {
+    background-color: #328336;
+}
+
+/* Styling for the form and form elements */
+.edit-profile-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center the form horizontally */
+    width: 100%;
+    max-width: 600px;  /* Max width to prevent form from being too wide */
+    margin: 0 auto;  /* Center the form block in the page */
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;  /* Spread label and input to left and right */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    width: 30%;  /* Give labels a fixed width */
+    font-weight: bold;
+    text-align: left;  /* Align label text to the left */
+}
+
+.form-group .input-field {
+    width: 65%;  /* Make input fields take up the remaining space */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Input field focus */
+.form-group .input-field:focus {
+    border-color: #1790c3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(23, 144, 195, 0.5);
+}
+
+/* Additional styling to ensure the form is centered on the page */
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;  /* Ensure enough height to center content vertically */
+    padding: 20px;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #1e1e2d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Styling Form Rows */
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-row h2 {
+text-align: center;
+}
+
+.form-row label {
+    flex: 0 0 200px; /* Panjang tetap 200px */
+    font-weight: bold;
+    text-align: right; /* Rata kanan untuk label */
+    margin-right: 10px; /* Jarak antara label dan input */
+}
+
+.form-row .input-field {
+    flex: 1; /* Input akan menyesuaikan lebar */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-row .input-field:focus {
+    border-color: #1790c3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(23, 144, 195, 0.5);
+}
+
+footer p {
+    margin: 0;
+}
